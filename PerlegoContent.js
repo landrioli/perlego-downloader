@@ -1,7 +1,8 @@
+var printContents = "";
+var i = 1;
 function printPages(start, end) {
     document.querySelector("style").remove();
-    let printContents = "";
-    let i = start;
+    	i = start;
     function downloadPage() {
         setTimeout(()=>{
             let content = document.querySelector(`div[data-chapterid='${i}']`);
